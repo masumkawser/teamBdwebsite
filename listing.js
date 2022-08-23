@@ -1,15 +1,11 @@
 
-// addTolist(this)
-// {
 
-//     this.disabled =true;
-    
-// }
 
 
 //Array  declaration 
 
 const cart = [];
+
 
 function displayProduct()
 {
@@ -26,7 +22,7 @@ if(cart.length>5){
 
     alert('you can not select more than 5')
 
-    return ;
+    cart.pop();
 }
 
     
