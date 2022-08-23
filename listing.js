@@ -5,11 +5,15 @@
 //     this.disabled =true;
     
 // }
+
+
+//Array  declaration 
+
 const cart = [];
 
 function displayProduct()
 {
-    let totalPrice = 0;
+ 
     const totalProducts = document.getElementById("total-player");
     totalProducts.innerText = cart.length;
 
@@ -25,7 +29,7 @@ if(cart.length>5){
     return ;
 }
 
-        totalPrice += cart[i].pdPrice;
+    
 
         const tr = document.createElement("tr");
         tr.innerHTML = `

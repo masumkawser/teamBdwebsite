@@ -1,4 +1,7 @@
 
+//  inputTaking function for inputfeild
+
+
 
 function getInputValue(inputId){
     const inputFeild = document.getElementById(inputId);
@@ -8,6 +11,9 @@ function getInputValue(inputId){
 
     return currentInput;
 }
+
+//  inputTaking function for Textelement 
+
 function getTextValue(inputId){
     const textElement = document.getElementById(inputId);
     const textElementString = textElement.innerText;
@@ -17,6 +23,7 @@ function getTextValue(inputId){
     return  currentElement ;
 }
 
+//setFunction 
 
 function setElementValue(elementId, value){
 
@@ -26,7 +33,7 @@ TestValue.innerText =value;
 
 }
 
-
+//Event handler  part----
 
 document.getElementById('Calculate').addEventListener('click',function (){
     
@@ -40,6 +47,8 @@ setElementValue('pexpense', perPlayerPrice);
 
 
 })
+
+//Total Calculate Part 
 
 document.getElementById('Total-Calculate').addEventListener('click', function(){
 
